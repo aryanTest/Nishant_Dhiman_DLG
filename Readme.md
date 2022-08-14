@@ -25,6 +25,11 @@ Also, if the issue still persists, Change the location pointer of default jre to
 
 Your issue for driver would be resolved, in case, observed. 
 
+Also, if you want to run the project by other ways, it can be done as follows:
+
+1) Right click on Feature File and Run as Cucumber Feature File (If you do not see this option, convert the project to Cucumber Project by Right clicking on Project and convert To - > Cucumber Project)
+1) Also, you can Run the project from Test Runner file in the Options package by Right Click -> Run as Junit Test
+
 **Other Notes:**
 
 1) There are 4 packages namely:
@@ -35,11 +40,6 @@ Your issue for driver would be resolved, in case, observed.
 1) There is a Features Folder which has the scenarios listed with steps.
 1) Configs Folder contain the config.properties file for manipulation of URL and browser.
 1) Coverage has been covered in HTML format once the command “mvn clean verify” is run via the command-line with folder “cucumber-maven-report” in target folder of the project. 
-
-Also, if you want to run the project by other ways, it can be done as follows:
-
-1) Right click on Feature File and Run as Cucumber Feature File (If you do not see this option, convert the project to Cucumber Project by Right clicking on Project and convert To - > Cucumber Project)
-1) Also, you can Run the project from Test Runner file in the Options package by Right Click -> Run as Junit Test
 
 Improvements can be done in the following areas:
 
