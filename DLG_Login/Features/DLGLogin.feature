@@ -6,7 +6,7 @@ Feature: Login Tool Check Verifications
 
   #Correct E-mail Id and Password
   @Test1
-  Scenario Outline: Successful verification of the Login Functionality
+  Scenario Outline: Successful verification of the Login Functionality with correct details
     When User enters the <username> and <password>
     Then User click on the Login button
     And User is able to see the successful message
@@ -49,7 +49,7 @@ Feature: Login Tool Check Verifications
 
   #Password Length Check with more than 16 characters and less than 8 characters
   @Test5
-  Scenario Outline: Unsuccessful verification of the Login Functionality with length of password below 8 and more than 16
+  Scenario Outline: Successful verification of the Login Functionality with length of password below 8 and more than 16
     When User enters the <username> and <password>
     And User is able to see the error message
 
@@ -60,7 +60,7 @@ Feature: Login Tool Check Verifications
 
   #Username Check with numerics after domain and no domain
   @Test6
-  Scenario Outline: Unsuccessful verification of the Login Functionality with numerics after domain and no domain
+  Scenario Outline: Successful verification of the Login Functionality with numerics after domain and no domain
     When User enters the <username> and <password>
     And User is able to see the error message
 
